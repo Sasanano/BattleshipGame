@@ -1,0 +1,35 @@
+body {background-color: black;}
+table {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    background: url('src/battleship_board.jpg') no-repeat;
+}
+TD, TH {
+    padding: 3px; 
+    border: 1px solid rgb(46, 0, 252); 
+    text-align: left;
+}
+
+form {
+    background-color: rgba(50, 132, 255, 0.514);
+    padding: 4px;
+    position: absolute;
+    top: 615px;
+    left: 37%;
+}
+
+form input {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    font-size: 1em;
+}
+
+.hit {
+    background: url(src/ship_logo.png)  no-repeat center center;
+}
+
+.miss {
+    background: url(src/miss.png) no-repeat center center;
+}
