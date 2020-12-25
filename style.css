@@ -1,4 +1,5 @@
 body {background-color: white;}
+
 table {
     position: relative;
     width: 600px;
@@ -6,6 +7,7 @@ table {
     margin: auto;
     background: url('src/battleship_board.jpg') no-repeat;
 }
+
 TD, TH {
     padding: 3px; 
     border: 1px solid rgb(46, 0, 252); 
@@ -20,12 +22,13 @@ form {
     padding: 2px; 
 }
 
-form input {
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(95, 83, 255);
-    font-size: 1em;
-
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .hit {
     background: url(src/ship_logo.png)  no-repeat center center;
