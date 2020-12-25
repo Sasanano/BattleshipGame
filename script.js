@@ -2,7 +2,7 @@
    Author: Aleksandr Momziakov */
 
    //создаем объект model
-   var model = {
+   const model = {
     boardSize: 7, //размер поля
     numShips: 3,  //количество кораблей
     shipLength: 3, //количество клеток, занимаемое одним кораблем
@@ -12,10 +12,10 @@
             { locations: ["10", "11", "12"], hits: ["", "", ""] }], 
     //метод fire записывает координаты, вводимые пользователем, сверяет с координатами корабля на поле
     fire: function(guess) {
-                for (var i = 0; i < this.numShips; i++) {
-                var ship = this.ships[i];
+                for (let i = 0; i < this.numShips; i++) {
+                const ship = this.ships[i];
                 location = ship.locations;
-                var index = locations.indexOf(guess);
+                const index = locations.indexOf(guess);
                 if (index >= 0) {
                 ship.hits[index] = "hit";
                 return true;
