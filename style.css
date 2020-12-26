@@ -25,9 +25,13 @@ button {
     margin-top: 5px;
 }
 
+div#messageArea {
+    display: inline-block;
+    margin-right: 400px;
+}
 
 .hit {
-    background: url(src/ship_logo.png)  no-repeat center center;
+    background: url(src/shipLogo.png)  no-repeat center center;
 }
 
 .miss {

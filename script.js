@@ -2,7 +2,23 @@
 Source: Head First JavaScript Programming by Eric Freeman;   
 Aleksandr Momziakov */
 
-   //создаем объект model
+// объект view отображает статус попадания/промаха по кораблю пользователем 
+    const view = {
+        displayMessage: function(msg) {   //метод получает строковое сообщение и выводит его
+        var messageArea = document.getElementById("messageArea");
+            messageArea.innerHTML = msg;
+        },
+        displayHit: function(location) {   //метод получает аргумент location, определяющий ячейку для вывода маркера (попадание)
+            var cell = document.getElementById(location);
+            cell.setAttribute("class", "hit");
+        },
+        displayMiss: function(location) {   //метод получает аргумент location, определяющий ячейку для вывода маркера (промах)
+            var cell = document.getElementById(location);
+            cell.setAttribute("class", "miss");
+        }
+    };
+
+//объект model отображает размер поля, количество кораблей, попаданий, состоит из нескольких методов для проверки статуса попадания по кораблю
    const model = {
     boardSize: 7, //размер поля
     numShips: 3,  //количество кораблей
@@ -78,6 +94,6 @@ console.log(parseGuess("A7")); */
         }
     };
 
-controller.processGuess("A6");
-controller.processGuess("B6");
+controller.processGuess("A5");
+controller.processGuess("B5");
 controller.processGuess("C6");
