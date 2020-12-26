@@ -2,7 +2,6 @@
 Source: Head First JavaScript Programming by Eric Freeman;   
 Aleksandr Momziakov */
 
-"use strict"
 // объект view отображает статус попадания/промаха по кораблю пользователем 
     const view = {
         displayMessage: function(msg) {   //метод получает строковое сообщение и выводит его
@@ -43,9 +42,9 @@ Aleksandr Momziakov */
                 return true;
             }
         }
-        view.displayMiss(guess);
-        view.displayMessage("You missed!");
-        return false;
+            view.displayMiss(guess);
+            view.displayMessage("You missed!");
+            return false;
         },
         isSunk: function(ship) {
                     for (var i = 0; i < this.shipLength; i++) {
@@ -99,9 +98,9 @@ const controller = {
         }
     };
 
-/* controller.processGuess("A5");
+/*  controller.processGuess("A5");
 controller.processGuess("B5");
-controller.processGuess("C6"); */
+controller.processGuess("C6");  */
 
     function init() {
         const fireButton = document.getElementsByClassName("btn btn-primary");
