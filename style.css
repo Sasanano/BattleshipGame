@@ -1,10 +1,10 @@
 body {background-color: white;}
 
 table {
-    position: relative;
+    position: absolute;
     width: 600px;
     height: 600px;
-    margin: auto;
+    margin: 20px 100px;
     background: url('src/battleship_board.jpg') no-repeat;
 }
 
@@ -15,11 +15,10 @@ TD, TH {
 }
 
 form {
-    margin-left: 33%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    float: right;
+    margin-right: 200px;
+    margin-top: 300px;
 }
 
 button {

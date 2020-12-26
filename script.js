@@ -1,5 +1,6 @@
 /* Game: Battleship;
-   Author: Aleksandr Momziakov */
+Source: Head First JavaScript Programming by Eric Freeman;   
+Aleksandr Momziakov */
 
    //создаем объект model
    const model = {
