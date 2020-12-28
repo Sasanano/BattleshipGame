@@ -1,4 +1,6 @@
-body {background-color: white;}
+body {
+    background-color: white;
+}
 
 table {
     position: absolute;
@@ -21,7 +23,7 @@ form {
     margin-top: 300px;
 }
 
-#id_fireButton {
+button {
     margin-top: 5px;
 }
 
@@ -34,9 +36,11 @@ div#messageArea {
 }
 
 .hit {
+    transition: 0.5s all;
     background: url(src/shipLogo.png)  no-repeat center center;
 }
 
 .miss {
+    transition: 0.5s all;
     background: url(src/miss.png) no-repeat center center;
 }
